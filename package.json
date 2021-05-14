@@ -4,16 +4,25 @@
   "description": "Web App",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gnoblereddy/adept-poc.git"
+    "start": "webpack-dev-server --mode development --open --hot",
+    "build": "webpack"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/gnoblereddy/adept-poc/issues"
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.1.2",
+    "axios": "^0.21.1"
   },
-  "homepage": "https://github.com/gnoblereddy/adept-poc#readme"
+  "devDependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.6",
+    "@babel/preset-react": "^7.7.4",
+    "babel-loader": "^8.0.6",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.41.3",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  }
 }
