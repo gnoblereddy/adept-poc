@@ -29,7 +29,7 @@ export default class Dashboard extends React.Component {
                                 id: storyData,
                                 commentData: []
                             });
-                            // console.log('---------', storyData.id, res.data.parent, storyData.id === res.data.parent, indx)
+                            console.log('---------', storyData, res.data, storyData.id === res.data.parent, indx)
                             if (storyData.id === res.data.parent) {
                                 data[indx].commentData.push(commentData);
                             }
