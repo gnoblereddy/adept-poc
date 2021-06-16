@@ -5,7 +5,6 @@ const initialState = {
 }
 
 export default function HomeReducer(state = initialState, action) {
-    console.log('HomeReducer---------');
     switch (action.type) {
         case 'SUCESS':
             return Object.assign({}, state, action);

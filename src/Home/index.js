@@ -13,7 +13,6 @@ class Home extends React.Component {
     }
 
     render() {
-        console.log('this.state-----', this.props.data);
         return (
             <div onClick={this.handleSubmit}>
                 <button onClick={() => handleSubmit()}>OnSubmit</button>
